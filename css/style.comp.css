@@ -1,0 +1,9 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif;
+  color: blue;
+  font-weight: 300;
+  line-height: 1.6; }
