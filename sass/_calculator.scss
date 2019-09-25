@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: min-content repeat(6, 1fr);
-    // align-items: center;
 
     min-height: 65rem;
     max-width: 35rem;
@@ -12,6 +11,8 @@
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
     box-shadow: 0 2rem 4.5rem rgba(#000, .2);
     border-radius: 1rem;
+    overflow: hidden;
+    opacity: 10%;
 
     button {
         &:hover {
@@ -70,10 +71,8 @@
         transition: all .1s;
     }
 
-
-
     &__0 {
-        grid-column: 1/ span 1;
+        grid-column: 2/ span 1;
         grid-row: 7/ span 1;
     }
 
@@ -123,12 +122,14 @@
     }
 
     &__decimal {
-        grid-column: 2/ span 1;
+        
+
+        grid-column: 1/ span 1;
         grid-row: 7/ span 1;
-        // margin-bottom: 1.1rem;
 
         span {
             margin-bottom: 1.1rem;
+            display: block;
         }
 
     }
@@ -168,4 +169,14 @@
         grid-row: 3/span 1;
 
     }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
