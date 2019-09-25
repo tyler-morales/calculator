@@ -29,7 +29,7 @@ input:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: min-content repeat(6, 1fr);
   min-height: 65rem;
-  max-width: 40rem;
+  max-width: 35rem;
   margin: 13vh auto 10rem auto;
   text-align: center;
   background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
@@ -58,11 +58,12 @@ input:focus {
     .calculator__mode:hover {
       transform: translateY(-3px); }
   .calculator__input {
+    max-width: inherit;
     grid-column: 1/ -1;
     background-color: transparent;
     color: #fff;
     padding: 1rem 5rem 1rem 0rem;
-    font-size: 3rem;
+    font-size: 4rem;
     border: none;
     cursor: pointer;
     text-align: right; }

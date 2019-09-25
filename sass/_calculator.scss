@@ -5,7 +5,7 @@
     // align-items: center;
 
     min-height: 65rem;
-    max-width: 40rem;
+    max-width: 35rem;
     margin: 13vh auto 10rem auto;
 
     text-align: center;
@@ -16,7 +16,6 @@
     button {
         &:hover {
             box-shadow: 0 2rem 4.5rem rgba(rgb(88, 88, 88), .3);
-
         }
 
         &:active {
@@ -49,11 +48,12 @@
     }
 
     &__input {
+        max-width: inherit;
         grid-column: 1/ -1;
         background-color: transparent;
         color: #fff;
         padding: 1rem 5rem 1rem 0rem;
-        font-size: 3rem;
+        font-size: 4rem;
         border: none;
         cursor: pointer;
         text-align: right;
